@@ -1,0 +1,13 @@
+.slidePicture {
+    width: 50%;
+    height: 300px;
+    position: relative;
+    left: 25%;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f26522;
+    border-radius: 10px;
+}
