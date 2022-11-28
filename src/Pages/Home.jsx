@@ -2,11 +2,22 @@ import React from 'react';
 import Search from '../Layouts/Header/Search';
 import '../Layouts/Header/head.css'
 import Head from '../Layouts/Header/Head';
-import Carousel from 'react-bootstrap/Carousel';
 import IndividualIntervalsExample from '../Components/Carousel';
 import './home.css'
+import BestSellers from '../Components/BestSellers';
+import { PRODUCTS } from '../utilities/constants/products';
 
 function Home(){
+    const [products, setProducts] = React.useState(PRODUCTS)
+    // React.useEffect(()=>{
+    //     fetch( `http://www.omdbapi.com/?t=a&apikey=3ee7236`).then(res=>{
+    //         return res.json()
+    //     }).then(res=>{
+    //         console.log(res)
+    //         setProducts(res)
+    //     })
+    // },[])
+
     return(
         <>
             <div className="main_section">
@@ -26,7 +37,11 @@ function Home(){
             
             <div className="container second_section">
                 <h2 className='text-center'>Man & Woman Fashion</h2>
-                <IndividualIntervalsExample/>
+                <IndividualIntervalsExample products={products}/>
+            </div>
+            <div className="container third_section">
+                <h1>Best Sellers</h1>
+                <BestSellers products={products}/>
             </div>
         </>
         

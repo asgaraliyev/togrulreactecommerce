@@ -1,13 +1,11 @@
-.slidePicture {
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.carousel-dark {
     width: 50%;
-    height: 300px;
-    position: relative;
-    left: 25%;
+    margin: 0 auto;
 }
 
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #f26522;
-    border-radius: 10px;
+.slick-slide img {
+    object-fit: cover;
+    padding: 0 10px;
 }

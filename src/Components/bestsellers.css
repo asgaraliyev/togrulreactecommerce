@@ -1,0 +1,24 @@
+.best_seller_product .product_image{
+    text-align: center;
+}
+
+.best_seller_product > a {
+    text-decoration: none;
+}
+
+.best_seller_product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.best_seller_product .product_price {
+    padding: 10px 0;
+    color: #000;
+    font-weight: bold
+}
+
+.best_seller_product .product_info {
+    color: #f26522;
+}

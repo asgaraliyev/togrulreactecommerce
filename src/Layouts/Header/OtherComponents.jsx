@@ -5,6 +5,7 @@ import {AiOutlineDown} from 'react-icons/ai'
 import {FaCartPlus, FaLanguage} from 'react-icons/fa'
 import {BiLogIn} from 'react-icons/bi'
 import {Dropdown, NavItem, Nav} from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 
 function OtherComponents(){
@@ -48,10 +49,10 @@ function OtherComponents(){
                     
 
                 <div className="shopping_cart">
-                    <a href=""><FaCartPlus/></a>
+                    <a href="/"><FaCartPlus/></a>
                 </div>
                 <div className="menu_login">
-                    <a href="/login"><BiLogIn/></a>
+                    <Link to="/login"><BiLogIn/></Link>
                 </div>
                 
             </div>

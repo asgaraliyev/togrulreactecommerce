@@ -8,3 +8,11 @@
     padding: 20px;
 }
 
+.third_section {
+    margin-top: 4em;
+}
+
+.third_section > h1 {
+    text-align: center;
+}
+
